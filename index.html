@@ -9,7 +9,7 @@
             margin: 0;
             font-family: font-family: "Roboto Mono", "Fira Code", "Menlo", "DejaVu Sans Mono", "Consolas", "Liberation Mono", "Courier New", monospace;
             color: #eee; 
-            background:#9fa9a3;
+            background-color:black;
             text-align: center;
             padding: 60px 20px;
         }
@@ -59,11 +59,128 @@
     Elektrisch • Akoestisch • Bas
 </div>
 
-    
+
 <div class="tagline">
     <a href="https://www.instagram.com/gijsmanski/" target="_blank">Instagram: @gijsmanski</a>
 </div>
-    
+
+<style>
+    .gallery {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .gallery td {
+        vertical-align: top;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .slider img {
+        width: 100%;
+        border-radius: 6px;
+        display: none;
+    }
+    .slider img.active {
+        display: block;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.35);
+        padding: 6px 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 4px;
+        user-select: none;
+    }
+    .arrow.left { left: -10px; }
+    .arrow.right { right: -10px; }
+
+    .desc {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    /* 1 kolom op mobiel */
+    @media (max-width: 700px) {
+        .gallery tr {
+            display: block;
+        }
+        .gallery td {
+            display: block;
+            width: 100%;
+        }
+    }
+</style>
+
+<table class="gallery">
+    <tr>
+        <td>
+            <div class="slider">
+                <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
+                <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
+
+                <img src="images/SandP_1.jpg" class="active" alt="">
+                <img src="images/SandP_2.jpg" alt="">
+                <img src="images/SandP_3.jpg" alt="">
+                <img src="images/SandP_4.jpg" alt="">
+                <img src="images/SandP_5.jpg" alt="">
+            </div>
+            <p class="desc">Simon and PatrickV</p>
+        </td>
+
+        <td>
+            <div class="slider">
+                <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
+                <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
+
+                <img src="images/ProjectP_1.jpg" class="active" alt="">
+                <img src="images/ProjectP_2.jpg" alt="">
+                <img src="images/ProjectP_3.jpg" alt="">
+                <img src="images/ProjectP_4.jpg" alt="">
+                <img src="images/ProjectP_5.jpg" alt="">
+            </div>
+            <p class="desc">The Precision Project</p>
+        </td>
+
+        <td>
+            <div class="slider">
+                <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
+                <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
+
+                <img src="images/Ibanez_1.jpg" alt="">
+                <img src="images/Ibanez_2.jpg" alt="">
+                <img src="images/Ibanez_3.jpg" class="active" alt="">
+            </div>
+            <p class="desc">Ibanez</p>
+        </td>
+
+    </tr>
+</table>
+
+
+
+<script>
+    function slide(button, direction) {
+      const slider = button.parentElement;
+      const images = slider.querySelectorAll('img');
+      let index = [...images].findIndex(img => img.classList.contains('active'));
+      images[index].classList.remove('active');
+      index = (index + direction + images.length) % images.length;
+      images[index].classList.add('active');
+    }
+</script>
+
 </body>
 </html>
 
