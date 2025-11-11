@@ -4,126 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gijs Brundel – Guitar & Bass Services</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: font-family: "Roboto Mono", "Fira Code", "Menlo", "DejaVu Sans Mono", "Consolas", "Liberation Mono", "Courier New", monospace;
-            color: #eee; 
-            background-color:black;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 300;
-            margin-bottom: 40px;
-        }
-
-        .tagline {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.5;
-            margin-bottom: 60px;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            background-color: #405de6; /* Instagram blauw */
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
-            background-color: #833ab4; /* Instagram gradient alternatief */
-        }
-        footer {
-            font-size: 14px;
-            opacity: 0.6;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <h1>Gijs Brundel</h1>
-<h2>Guitar & Bass services</h2>
+<h2>Guitar &amp; Bass Services</h2>
 
 <div class="tagline">
     Reparatie • Afstellen • Modificaties<br>
     Elektrisch • Akoestisch • Bas
 </div>
 
+<h2>Amersfoort</h2>
 
 <div class="tagline">
     <a href="https://www.instagram.com/gijsmanski/" target="_blank">Instagram: @gijsmanski</a>
 </div>
 
-<style>
-    .gallery {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .gallery td {
-        vertical-align: top;
-        padding: 20px;
-        position: relative;
-        text-align: center;
-    }
-
-    .slider {
-        position: relative;
-        width: 100%;
-        max-width: 260px;
-        margin: 0 auto;
-    }
-    .slider img {
-        width: 100%;
-        border-radius: 6px;
-        display: none;
-    }
-    .slider img.active {
-        display: block;
-    }
-
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0,0,0,0.35);
-        padding: 6px 10px;
-        color: white;
-        cursor: pointer;
-        font-size: 20px;
-        border-radius: 4px;
-        user-select: none;
-    }
-    .arrow.left { left: -10px; }
-    .arrow.right { right: -10px; }
-
-    .desc {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-
-    /* 1 kolom op mobiel */
-    @media (max-width: 700px) {
-        .gallery tr {
-            display: block;
-        }
-        .gallery td {
-            display: block;
-            width: 100%;
-        }
-    }
-</style>
-
-<table class="gallery">
+<table class="gallery" >
     <tr>
         <td>
             <div class="slider">
@@ -158,17 +58,20 @@
                 <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
                 <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
 
-                <img src="images/Ibanez_1.jpg" alt="">
+                <img src="images/Ibanez_1.jpg" class="active" alt="">
                 <img src="images/Ibanez_2.jpg" alt="">
-                <img src="images/Ibanez_3.jpg" class="active" alt="">
+                <img src="images/Ibanez_3.jpg" alt="">
             </div>
             <p class="desc">Ibanez</p>
         </td>
-
     </tr>
 </table>
 
+<hr>
 
+<footer>
+    © 2025 Gijs Brundel – Guitar &amp; Bass Services
+</footer>
 
 <script>
     function slide(button, direction) {
@@ -183,14 +86,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
