@@ -6,8 +6,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fff;
-  color: #111;
+  background-color: #000000; /* black */
+  color: #e6e6e6; /* white */
   text-align: center;
   padding: 60px 20px;
   line-height: 1.6;
@@ -19,21 +19,20 @@ h1 {
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 50px;
-  color: #333;
+  color: #e6e6e6;
   letter-spacing: 1px;
 }
 
-/* Tekst en knoppen */
+/* Text en knoppen */
 .tagline {
   font-size: 18px;
-  color: #444;
+  color: #e6e6e6;
   margin-bottom: 40px;
 }
 
@@ -116,7 +115,7 @@ a:hover {
 .desc {
   margin-top: 15px;
   font-size: 15px;
-  color: #333;
+  color: #e6e6e6;
   letter-spacing: 0.5px;
 }
 
