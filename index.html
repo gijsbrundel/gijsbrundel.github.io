@@ -12,63 +12,80 @@
 <h1>Gijs Brundel</h1>
 <h2>Guitar &amp; Bass Services</h2>
 
+<h2>Amersfoort</h2>
+
 <div class="tagline">
     Reparatie • Afstellen • Modificaties<br>
     Elektrisch • Akoestisch • Bas
 </div>
 
-<h2>Amersfoort</h2>
+<div class="tagline" style="text-align:left; display:inline-block;">
+    <h3>Onderhoud &amp; setup</h3>
 
-<div class="tagline">
-    Vragen en contact kan via:<br/>
-    <a href="https://www.instagram.com/gijs.brundel/" target="_blank">Instagram: @gijs.brundel</a>
+    <ul style="list-style-position: inside; text-align:left;">
+        <li>Snaren vervangen</li>
+        <li>Halsafstelling (truss rod)</li>
+        <li>Actie (snaarhoogte) instellen</li>
+        <li>Intoneren</li>
+        <li>Schoonmaken en oliën van toets</li>
+        <li>Topkam vervangen / afstellen</li>
+    </ul>
+
+
+    <h3>Frets</h3>
+    <ul style="list-style-position: inside; text-align:left;">
+        <li>Frets vlakken, crownen en polijsten</li>
+        <li>Volledige refret</li>
+    </ul>
+
+
+    <h3>Brug &amp; hardware</h3>
+    <ul style="list-style-position: inside; text-align:left;">
+        <li>Stemmechanieken afstellen, reinigen of vervangen</li>
+        <li>Brug afstellen</li>
+        <li>Tremolo afstellen</li>
+        <li>Hipshot Xtender D-Tuner installeren</li>
+    </ul>
+
+
+    <h3>Elektronica</h3>
+    <ul style="list-style-position: inside; text-align:left;">
+        <li>Pickups afstellen, vervangen of upgraden</li>
+        <li>Schakelaars vervangen of modificatie (b.v. upgrade naar Switchcraft)</li>
+        <li>Potentiometers of Jack outputs vervangen (b.v. upgrade naar CTS)</li>
+        <li>Modificaties (serie/parallel, coil split, phase switch, treble bleed, custom wiring)</li>
+        <li>Installatie en reparatie van actieve elektronica</li>
+        <li>Installatie en reparatie van pickups in akoestische gitaar</li>
+        <li>Pedals repareren en modificeren</li>
+    </ul>
 </div>
 
-<table class="gallery" >
-    <tr>
-        <td>
-            <div class="slider">
-                <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
-                <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
 
-                <img src="images/SandP_1.jpg" class="active" alt="">
-                <img src="images/SandP_2.jpg" alt="">
-                <img src="images/SandP_3.jpg" alt="">
-                <img src="images/SandP_4.jpg" alt="">
-                <img src="images/SandP_5.jpg" alt="">
-            </div>
-            <p class="desc">Simon and Patrick</p>
-        </td>
+<div class="tagline">
+    Vragen en contact kan via Instagram of e-mail:
+    <br/>
+    <br/>
+    <a href="https://www.instagram.com/gijs.brundel/" target="_blank">Instagram: @gijs.brundel</a>
+    <br/>
+    <br/>
+    <a id="mail" href="#">Of stuur een e-mail</a>
 
-        <td>
-            <div class="slider">
-                <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
-                <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
+    <script>
+        const name = "gitarenmaker";
+        const domain = "gmail";
+        const tld = "com";
+        const address = name + "@" + domain + "." + tld;
 
-                <img src="images/ProjectP_1.jpg" class="active" alt="">
-                <img src="images/ProjectP_2.jpg" alt="">
-                <img src="images/ProjectP_3.jpg" alt="">
-                <img src="images/ProjectP_4.jpg" alt="">
-                <img src="images/ProjectP_5.jpg" alt="">
-            </div>
-            <p class="desc">The Precision Project</p>
-        </td>
+        const subject = encodeURIComponent("Vraag over een gitaar...");
+        const body = encodeURIComponent("Hallo Gijs,\n\n");
 
-        <td>
-            <div class="slider">
-                <span class="arrow left" onclick="slide(this,-1)">&#10094;</span>
-                <span class="arrow right" onclick="slide(this,1)">&#10095;</span>
+        const link = document.getElementById("mail");
+        link.href = "mailto:" + address + "?subject=" + subject + "&body=" + body;
+        link.innerText = address;
+    </script>
+</div>
 
-                <img src="images/Ibanez_1.jpg" class="active" alt="">
-                <img src="images/Ibanez_2.jpg" alt="">
-                <img src="images/Ibanez_3.jpg" alt="">
-            </div>
-            <p class="desc">Ibanez</p>
-        </td>
-    </tr>
-</table>
 
-<hr>
 
 <footer>
     Gijs Brundel – Guitar &amp; Bass Services
