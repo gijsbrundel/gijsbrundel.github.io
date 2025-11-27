@@ -6,8 +6,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #000000; /* black */
-  color: #e6e6e6; /* white */
+  background-color: DimGray; /* black */
+  color: GhostWhite; /* white */
   text-align: center;
   padding: 60px 20px;
   line-height: 1.6;
@@ -24,16 +24,33 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: #e6e6e6;
   letter-spacing: 1px;
 }
 
-/* Text en knoppen */
+h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #e6e6e6;
+  letter-spacing: 1px;
+}
+
 .tagline {
   font-size: 18px;
   color: #e6e6e6;
   margin-bottom: 40px;
+}
+
+.services {
+  font-size: 16px;
+  color: #e6e6e6;
+  margin-bottom: 40px;
+  text-align:left;
+  display:inline-block;
+  list-style-position: inside;
 }
 
 a {
@@ -54,7 +71,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Galerij */
 .gallery {
   width: 100%;
   border-collapse: collapse;
