@@ -1,3 +1,9 @@
+:root {
+  --primary-bg-color: #393939; /* Dark Grey: #393939 */
+  --primary-color: #ec7f37;    /* Light Orange: #ec7f37 */
+  --secondary-color: #be4f0c;    /* Orange Yellow: #be4f0c */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,8 +19,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #393939; /* Dark Grey */
-  color: #ec7f37; /* Light Orange */
+  background-color:  var(--primary-bg-color);
+  color:  var(--primary-color);
   text-align: center;
   padding: 60px 20px;
   line-height: 1.6;
@@ -32,7 +38,7 @@ h2 {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
-  color: #be4f0c;
+  color: var(--secondary-color);
   letter-spacing: 1px;
 }
 
@@ -41,9 +47,15 @@ h3 {
   font-weight: 800;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #be4f0c;
+  color: var(--secondary-color);
   letter-spacing: 1px;
 }
+
+p {
+  text-align: justify;
+  color: white;
+}
+
 
 .tagline {
   font-size: 18px;
@@ -64,7 +76,7 @@ a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background-color: #67c8ff;
+  /* background-color: #67c8ff; */
   padding: 14px 30px;
   border-radius: 30px;
   font-weight: 600;
@@ -154,7 +166,7 @@ hr {
 
 footer {
   font-size: 13px;
-  color: #be4f0c;
+  color: var(--secondary-color);
   margin-top: 80px;
 }
 
