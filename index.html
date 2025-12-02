@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gijs Brundel – Guitar & Bass Services</title>
-    <meta name="description" content="Afstellen, intoneren en reparatie van gitaren en basgitaren.">
+    <meta name="description"
+          content="onderhoud, afstelling en reparaties van akoestische en elektrische gitaren en basgitaren.">
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<h1>Gijs Brundel</h1>
-<h2>Guitar &amp; Bass Services</h2>
+<div class="introduction">
+    <h1>Gijs Brundel</h1>
+    <h2>Guitar &amp; Bass Services</h2>
+    <h2>Amersfoort</h2>
+    <div class="tagline">
+        Reparatie • Afstellen • Modificaties<br>
+        Elektrisch • Akoestisch • Bas
+    </div>
 
-<h2>Amersfoort</h2>
-
-<div class="tagline">
-    Reparatie • Afstellen • Modificaties<br>
-    Elektrisch • Akoestisch • Bas
+    <p class="intro">
+        Ik verzorg onderhoud, afstellingen en reparaties van akoestische en elektrische gitaren en basgitaren.
+        Of het nu gaat om het vervangen van snaren op je eerste lesgitaar,
+        het afstellen van elektrische gitaren of basgitaren, of reparaties, upgrades en modificaties van pickups en elektronica.
+        Voor vragen of een prijsindicatie kun je contact opnemen via <a class="mail" href="#">e-mail</a>
+        dan kijken we samen wat de mogelijkheden zijn.
+    </p>
 </div>
 
 <div class="services">
@@ -65,7 +74,7 @@
     <br/>
     <a href="https://www.instagram.com/gijs.brundel/" target="_blank">Instagram: @gijs.brundel</a>
     &nbsp;
-    <a id="mail" href="#">Of stuur een e-mail</a>
+    <a class="mail" href="#">Of stuur een e-mail</a>
 
     <script>
         const name = "gitarenmaker";
@@ -76,9 +85,10 @@
         const subject = encodeURIComponent("Vraag over een gitaar...");
         const body = encodeURIComponent("Hallo Gijs,\n\n");
 
-        const link = document.getElementById("mail");
-        link.href = "mailto:" + address + "?subject=" + subject + "&body=" + body;
-        link.innerText = address;
+        document.querySelectorAll(".mail").forEach(link => {
+            link.href = "mailto:" + address + "?subject=" + subject + "&body=" + body;
+            link.innerText = address;
+        });
     </script>
 </div>
 
@@ -87,16 +97,7 @@
     Gitaar onderhoud en afstellen - Finest Worksong - Gijs Brundel – Guitar &amp; Bass Services
 </footer>
 
-<script>
-    function slide(button, direction) {
-      const slider = button.parentElement;
-      const images = slider.querySelectorAll('img');
-      let index = [...images].findIndex(img => img.classList.contains('active'));
-      images[index].classList.remove('active');
-      index = (index + direction + images.length) % images.length;
-      images[index].classList.add('active');
-    }
-</script>
+
 
 </body>
 </html>
