@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparaties</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .foto-galerij {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            padding: 0 10px;
+        }
+        .foto-galerij img {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body>
+<div class="introduction">
+    <h1>Gijs Brundel</h1>
+    <h2>Guitar &amp; Bass Services</h2>
+</div>
+<header>
+    <nav class="main-nav">
+        <span class="pipe">|</span>
+        <a href="index.html">Home</a>
+        <span class="pipe">|</span>
+        <a href="elektronica.html">Elektronica</a>
+        <span class="pipe">|</span>
+        <a href="reparaties.html">Reparaties</a>
+        <span class="pipe">|</span>
+        <a href="contact.html" class="active">Contact</a>
+        <span class="pipe">|</span>
+    </nav>
+</header>
+
+<div class="introduction">
+    <div class="intro">
+        <h2>Contact</h2>
+        <p>
+            Voor vragen kun je contact opnemen via <a class="mail" href="#">e-mail</a>
+        </p>
+        <p>
+            Of mij volgen en contacten via Instagram: <a href="https://www.instagram.com/gijs.brundel/" target="_blank">Instagram: @gijs.brundel</a>
+        </p>
+        <p>
+            We kunnen dan bellen of via WhatsApp of Signal even kijken wat ik voor je kan betekenen. Ik denk graag met je mee.
+        </p>
+        <script>
+            const name = "gitarenmaker";
+            const domain = "gmail";
+            const tld = "com";
+            const address = name + "@" + domain + "." + tld;
+
+            const subject = encodeURIComponent("Vraag over een gitaar...");
+            const body = encodeURIComponent("Hallo Gijs,\n\n");
+
+            document.querySelectorAll(".mail").forEach(link => {
+                link.href = "mailto:" + address + "?subject=" + subject + "&body=" + body;
+                link.innerText = address;
+            });
+        </script>
+
+        <!--        </div>-->
+    </div>
+</div>
+<footer>
+    Gitaar onderhoud en afstellen - Finest Worksong - Gijs Brundel – Guitar &amp; Bass Services
+</footer>
+
+</body>
+</html>

@@ -1,10 +1,65 @@
+/* =========================
+   Palet Switch
+   1 = Vintage Sunburst
+   2 = Daphne Blue + Aged Cream
+   3 = Black + Gold (Deluxe)
+   4 = Olympic White + Sea Foam
+   ========================= */
 :root {
-  --primary-bg-color: #393939;   /* Donkergrijs achtergrond */
-  --primary-text-color: #e6e6e6;
-  --primary-color: #ec7f37;       /* Lichtoranje accent */
-  --secondary-color: #be4f0c;     /* Dieper oranje  */
-  --hover-color: #ff5a09;
+  --active-palette: 1; /* kies 1, 2, 3 of 4 */
+
+  /* Default values, worden overschreven door palette regels hieronder */
+  --primary-bg-color: #111111;
+  --primary-text-color: #F1EEE6;
+  --primary-color: #F1EEE6;
+  --secondary-color: #9FE2BF;
+  --hover-color: #7EC8A5;
 }
+
+/* =========================
+   PALET 1 — Vintage Sunburst
+   ========================= */
+:root[data-palette="1"] {
+  --primary-bg-color: #0E0E0E;
+  --primary-text-color: #F0E9DD;
+  --primary-color: #D88935;
+  --secondary-color: #A4472A;
+  --hover-color: #E89A48;
+}
+
+/* =========================
+   PALET 2 — Daphne Blue + Aged Cream
+   ========================= */
+:root[data-palette="2"] {
+  --primary-bg-color: #111111;
+  --primary-text-color: #E6E2DA;
+  --primary-color: #7DB7D8;
+  --secondary-color: #F4E9CE;
+  --hover-color: #5CA3C9;
+}
+
+/* =========================
+   PALET 3 — Black + Gold (Deluxe)
+   ========================= */
+:root[data-palette="3"] {
+  --primary-bg-color: #000000;
+  --primary-text-color: #E5DCC5;
+  --primary-color: #C1A875;
+  --secondary-color: #9E875C;
+  --hover-color: #D4BE91;
+}
+
+/* =========================
+   PALET 4 — Olympic White + Sea Foam
+   ========================= */
+:root[data-palette="4"] {
+  --primary-bg-color: #111111;
+  --primary-text-color: #F1EEE6;
+  --primary-color: #F1EEE6;
+  --secondary-color: #9FE2BF;
+  --hover-color: #7EC8A5;
+}
+
 
  * {
   box-sizing: border-box;
@@ -19,6 +74,27 @@ body {
   text-align: center;
   padding: 60px 20px;
   line-height: 1.6;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #f1eee6;
+    color: #111;
+    border-radius: 2px;
+}
+
+.pipe {
+    padding: 0 4px;
+    user-select: none;
 }
 
 .introduction {
@@ -77,13 +153,35 @@ p {
   color: var(--primary-text-color);
 }
 
-.services {
+.uit-services {
   font-size: 16px;
   margin-bottom: 40px;
   text-align: left;
   display: inline-block;
   list-style-position: inside;
 }
+
+.services {
+    display: block;
+}
+
+/* Titels */
+.services h3 {
+    margin: 24px 0 8px 0;
+    font-size: 1.05rem;
+}
+
+/* Geen bullets */
+.services ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 4px 0;
+}
+
 
 a {
   display: inline-block;
