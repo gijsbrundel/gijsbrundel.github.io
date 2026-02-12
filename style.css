@@ -76,6 +76,26 @@ body {
   line-height: 1.6;
 }
 
+        .name-wrapper {
+            position: relative;
+            width: fit-content;
+        }
+
+        .brundel {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .gijs {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            font-size: 48px;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            transform: rotate(-180deg);
+        }
+
 .main-nav {
     text-align: center;
 }
