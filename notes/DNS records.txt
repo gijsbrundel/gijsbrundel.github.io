@@ -1,0 +1,41 @@
+Domeinnaam Prioriteit TTL Recordtype Adres
+_dmarc.gijsbrundel.nl	900	TXT	"v=DMARC1; p=quarantine;"
+gijsbrundel.nl		86400	NS	ns1.openprovider.nl
+gijsbrundel.nl		86400	TXT	"google-site-verification=3U6MDCv7T1RsryjDh3qGbFyMYvBLQE4UtUks5yES64U"
+gijsbrundel.nl		86400	TXT	"v=spf1 include:spf.junda.nl ip4:188.40.51.135 -all"
+gijsbrundel.nl		86400	SOA	ns1.openprovider.nl dns.openprovider.eu 2025112701 10800 3600 604800 3600
+gijsbrundel.nl		86400	NS	ns2.openprovider.be
+gijsbrundel.nl		86400	NS	ns3.openprovider.eu
+gijsbrundel.nl		900	A	185.199.110.153
+gijsbrundel.nl		900	A	185.199.111.153
+www.gijsbrundel.nl	900	CNAME	gijsbrundel.github.io
+
+
+Verwijderd:
+ftp.gijsbrundel.nl	900	A	188.40.51.135
+mail.gijsbrundel.nl	900	A	188.40.51.135
+webmail.gijsbrundel.nl	900	A	188.40.51.135
+gijsbrundel.nl	10	900	MX	mail.gijsbrundel.nl
+
+
+
+| Record         | Type  | Waarde                     | Korte omschrijving                                |
+
+| -------------- | ----- | -------------------------- | ------------------------------------------------- |
+
+| gijsbrundel.nl | A     | 185.199.110.153            | Verbindt root-domein met GitHub Pages             |
+
+| gijsbrundel.nl | A     | 185.199.111.153            | Extra GitHub Pages IP voor betrouwbaarheid        |
+
+| www            | CNAME | gijsbrundel.github.io      | Laat www-versie van site naar GitHub Pages wijzen |
+
+| gijsbrundel.nl | TXT   | google-site-verification=… | Optioneel, verifieert domein bij Google           |
+
+| gijsbrundel.nl | NS    | ns1.openprovider.nl        | Nameserver 1 van je DNS-provider                  |
+
+| gijsbrundel.nl | NS    | ns2.openprovider.be        | Nameserver 2 van je DNS-provider                  |
+
+| gijsbrundel.nl | NS    | ns3.openprovider.eu        | Nameserver 3 van je DNS-provider                  |
+
+| gijsbrundel.nl | SOA   | automatisch                | Beheert DNS-zone en updates                       |
+
